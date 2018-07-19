@@ -44,7 +44,7 @@ View = () => {
   }
 
 
-render() {
+  render() {
     return (
         <article>
             <NavBar viewHandler={this.showView}
