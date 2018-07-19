@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-// import "./NavBar.css"
-import logo from "../img/loginGrphics.png"
+import "./navBar.css"
+import changeLogo from "../img/changeLogo.png"
+import analyticsLogo from "../img/analyticsLogo.png"
 
 
 export default class NavBar extends Component {
@@ -24,14 +25,15 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <nav className="navBar" style={{ border: 'solid 1px #00D1B2', margin: '0' }}>
-                   <img id="nav_welcome" src={logo} alt="brand"/>    
+            <nav className="navBar" style={{ border: 'solid 1px #00D1B2', margin: '0', color: 'blue' }}>
+                   <img id="change_logo" src={changeLogo} alt="brand"/>    
                         {/* <this.LoginLogout /> */}
+                    <img id="analytics_logo" src={analyticsLogo} alt=" Analytics Logo"/>
                     <h1 className="nav-link" id="title"
                         // onClick={this.props.viewHandler} 
                         >
                         Change Healthcare REZOLV</h1>
-            </nav>    
+            </nav>  
         )
     }
 }

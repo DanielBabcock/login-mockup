@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./login.css"
-import logo from "../img/loginImage.png"
+// import logo from "../img/loginImage.png"
 
 class Login extends Component {
 
@@ -20,22 +20,30 @@ class Login extends Component {
 
     render() {
         return (
-            <div class="bgImg">
-            <img src={logo} alt="logo"/>
-                <div>
-                    <form onSubmit={this.handleLogin}>
+            <div class="loginBG">
+            {/* <img src={logo} alt="logo"/> */}
+                <div class="bgImg">
+                    <form class="loginForm" onSubmit={this.handleLogin}>
                         <input onChange={this.handleFieldChange} placeholder='Email' type="email" id="email" />
                         <input style={{marginTop : 10}} onChange={this.handleFieldChange} placeholder='Password' type="password" id="password" />
-                            <button 
-                                id="button__login"
-                                type="submit" 
-                            >Log In
-                            </button>
-                            <button 
-                                id="page__register" 
-                                onClick={this.props.showView} 
-                            >Sign Up!
-                            </button>
+                            <div class="btnDiv">
+                                <button 
+                                    id="button__login"
+                                    type="submit" 
+                                >Sign In
+                                </button>
+                            </div>
+                            <div id="checkboxDiv">
+                                <input type="checkbox" 
+                                    id="rememberMe">
+                                </input>
+                                <label for="rememberMe">Remember Me
+                                </label>
+                            </div>
+                            <div id="forgotDiv">
+                                <label>Forgot Password?</label>
+                            </div>
+                            
                     </form>
                 </div>
             </div>

@@ -1,6 +1,27 @@
-.bgImg img{
-    /* background-image: url("../img/loginImage.png");
-    background-position: cover; */
+.loginBG {
+    height: 100vh;
+}
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    width: 225px;
+    background: rgba(64, 64, 64, .97);
+    /* opacity: 50%; */
+}
+/* 
+.btnDiv{
+    align-self: left;
+} */
+.btnDiv button{
+    margin: 10px;
+}
+
+.bgImg {
+    background-image: url("../img/background.jpg");
+    background-position: cover;
     height: 100%;
     width: 100%;
 }
